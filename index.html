@@ -2,9 +2,67 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script type="text/javascript" src="./js.js"></script>
-    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./js.js" defer></script>
+    <title>ODIN RPS UI BY YOUNES</title>
   </head>
-  <body></body>
+  <body>
+    <div id="container">
+      <h2>5 ROUNDS</h2>
+      <h1 class="head-text">ROCK, Paper, Scissor !</h1>
+
+      <!--     <span>
+      <label for="rounds">ROUNDS</label>
+      <input type="number" placeholder="ROUNDS NUMBER"/>
+    </span> -->
+
+      <div class="btn-container">
+        <button class="btn1">
+          <p class="contentP">rock</p>
+          <!-- we use referrerpolicy="no-referrer" cause imgur's images wont load without it -->
+          <img
+            class="icons"
+            src="https://i.imgur.com/PkfOyRV.png"
+            alt="rock"
+            referrerpolicy="no-referrer"
+          />
+        </button>
+
+        <button class="btn2">
+          <p class="contentP">paper</p>
+          <img
+            class="icons"
+            src="https://i.imgur.com/kHzWbPW.png"
+            alt="paper"
+            referrerpolicy="no-referrer"
+          />
+        </button>
+
+        <button class="btn3">
+          <p class="contentP">scissors</p>
+          <img
+            class="icons"
+            src="https://i.imgur.com/yyoe9L5.png"
+            alt="scissors"
+            referrerpolicy="no-referrer"
+          />
+        </button>
+      </div>
+
+      <div class="points-container">
+        <div class="human-points">
+          <h4>HUMAN POINT</h4>
+          <label for="points" class="human-point-label"></label>
+        </div>
+        <div class="computer-points">
+          <h4>COMPUTER POINT</h4>
+          <label for="points" class="computer-point-label"></label>
+        </div>
+      </div>
+      <div class="computer-choice"></div>
+      <a href="" class="reload">RESET GAME</a>
+    </div>
+  </body>
 </html>
